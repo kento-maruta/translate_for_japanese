@@ -1,0 +1,2 @@
+# translate_for_japanese
+chrome_extension で右クリックですぐに日本語へ変換してくれます
