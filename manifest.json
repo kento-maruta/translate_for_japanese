@@ -4,16 +4,15 @@
   "manifest_version": 2,
   "description": "すぐに日本語に翻訳してくれます",
   "background": {"page": "background.html"},
-  "permissions" : [
-    "contextMenus",
-    "http://*/*",
-    "https://*/*"
-  ],
+  "permissions" : ["contextMenus"],
   "content_scripts": [{
-     "js": ["jquery.min.js", "background.js", "encode.js"],
-     "matches": ["http://*/*", "https://*/*"]
+     "js": [
+      "lib/jquery.min.js", 
+      "lib/encode.js",
+      "background.js"
+    ],
+     "matches": ["<all_urls>"]
    }],
-  "content_security_policy":"script-src 'self' http://localhost:4000; object-src 'self'",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
